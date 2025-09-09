@@ -15,4 +15,5 @@ class Heroi extends Personagem {
        _missao = missao;
   String get reino => _reino;
   String get missao => _missao;
+  
 }

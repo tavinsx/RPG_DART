@@ -4,7 +4,7 @@ class Monstro extends Personagem {
 // definição das variaveis especificas do monstro
   final String _origem;
   final String _missaoMonstro;
-  Monstro({
+  Monstro(super.nome, super.vida, super.escudo, super.velocidade, {
 // construtor importado da superclasse personagem
     required String origem,
     required String missaoMonstro,
