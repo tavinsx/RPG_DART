@@ -1,4 +1,4 @@
-abstract class Personagem {
+abstract class Personagem{
   String nome;
   int vida;
   int escudo;
