@@ -16,3 +16,6 @@ class Monstro extends Personagem {
         _tipoCriatura = tipoCriatura;
   }
 
+  String get _origem => _origem;
+  String get _tipoCriatura => _tipoCriatura;
+
