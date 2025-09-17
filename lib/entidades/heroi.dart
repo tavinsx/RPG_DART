@@ -4,7 +4,7 @@ class Heroi extends Personagem {
   final String _reino;
   final String _missao;
 
-  Heroi(super.nome, super.vida, super.escudo, super.velocidade, {
+  Heroi({
     required String reino,
     required String missao,
     required super.nome,

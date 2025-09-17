@@ -11,7 +11,7 @@ void main(){
         nome: 'Heroi1',
         vida: 100,
         escudo: 50,
-        velocidade: 30,
+        velocidade: 30, raca: null,
       );
       expect(heroi, isA<Heroi>());
       expect(heroi, isA<Personagem>());
