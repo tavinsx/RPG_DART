@@ -1,4 +1,6 @@
+import 'package:rpg_v2/entidades/elfo.dart';
 import 'package:rpg_v2/entidades/heroi.dart';
+import 'package:rpg_v2/entidades/humano.dart';
 import 'package:rpg_v2/entidades/personagem.dart';
 import 'package:test/test.dart';
 
@@ -11,7 +13,7 @@ void main() {
         nome: 'Jemerson',
         vida: 10,
         escudo: 10,
-        velocidade: 10,
+        velocidade: 10, raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 6),
       );
       expect(heroi, isA<Heroi>());
       expect(heroi, isA<Personagem>());
@@ -26,6 +28,7 @@ void main() {
       velocidade: 10,
       reino: '',
       missao: '',
+      raca: Humano(bonusVida: 5, bonusEscudo: 6, bonusAtaque: 3)
     );
     expect(personagem, isA<Personagem>());
   });
@@ -36,6 +39,7 @@ void main() {
       vida: 15,
       escudo: 12,
       velocidade: 33,
+      raca: Humano(bonusVida: 5, bonusEscudo: 2, bonusAtaque: 3
     );
     expect(personagem.nome, 'Maria');
     expect(personagem.vida, 15);
@@ -49,6 +53,7 @@ void main() {
       vida: 10,
       escudo: 10,
       velocidade: 10,
+      raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 8)
     );
     expect(personagem.vida, 10);
     personagem.defender(15);
@@ -61,6 +66,7 @@ void main() {
       vida: 10,
       escudo: 10,
       velocidade: 10,
+      raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 8)
     );
     expect(personagem.vida, 10);
     personagem.defender(9);
@@ -73,6 +79,7 @@ void main() {
       vida: 10,
       escudo: 5,
       velocidade: 10,
+      raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 8)
     );
     expect(personagem.vida, 10);
     personagem.defender(20);
@@ -85,6 +92,8 @@ void main() {
       vida: 10,
       escudo: 5,
       velocidade: 10,
+      raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 8)
+
     );
     expect(personagem.vida, 10);
     personagem.defender(20);
@@ -97,6 +106,8 @@ void main() {
       vida: 10,
       escudo: 10,
       velocidade: 10,
+      raca: Elfo(bonusVida: 5, bonusEscudo: 5, bonusAtaque: 8)
+
     );
     expect(personagem.vida, 10);
     personagem.defender(15);

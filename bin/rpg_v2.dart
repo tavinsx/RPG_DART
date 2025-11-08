@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-void main() {
-  print('Hello world');
-=======
+
 import 'package:rpg_v2/entidades/Duelo.dart';
 import 'package:rpg_v2/entidades/dado.dart';
 import 'package:rpg_v2/entidades/elfo.dart';
 import 'package:rpg_v2/entidades/heroi.dart';
 import 'package:rpg_v2/entidades/humano.dart';
 import 'package:rpg_v2/entidades/monstro.dart';
-import 'package:rpg_v2/entidades/personagem.dart';
 
 void main() {
   final dado = Dado(20);
@@ -39,5 +35,4 @@ void main() {
     dado: dado,
   );
   duelo.iniciar();
->>>>>>> 9a86c49e90b1d70a346073daf010fec8e063e2e4
 }
